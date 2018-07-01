@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">QuizApp</string>
+    <string name="question1title">Question 1</string>
+    <string name="question2title">Question 2</string>
+    <string name="question3title">Question 3</string>
+    <string name="question4title">Question 4</string>
+    <string name="question5title">Question 5</string>
+    <string name="question1">In which games appears the famous video game character Mario?</string>
+    <string name="answerMario">Mario</string>
+    <string name="answerDonkeyKong">Donkey Kong</string>
+    <string name="answerPortal">Portal</string>
+    <string name="question2">Which year was the game boy released?</string>
+    <string name="answer1989">1989</string>
+    <string name="answer1979">1979</string>
+    <string name="answer1999">1999</string>
+    <string name="answer1899">1899</string>
+    <string name="question3">What\'s the last name of the most famous Lara?</string>
+    <string name="LastNameLaraHint">Most famous Lara\'s last name</string>
+    <string name="question4">\"The cake is a lie\" is a famous quote from the game:</string>
+    <string name="answerBorderlands">Borderlands</string>
+    <string name="question5">Which are Nintendo consoles?</string>
+    <string name="submit">Submit</string>
+    <string name="answerBioShock">BioShock</string>
+    <string name="answerGameBoy">Game Boy</string>
+    <string name="answerPSP">PSP</string>
+    <string name="answerWii">Wii</string>
+
+</resources>

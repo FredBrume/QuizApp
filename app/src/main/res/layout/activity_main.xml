@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/quiz_app_logo_width"
+        android:layout_height="@dimen/quiz_app_logo_height"
+        android:layout_gravity="center"
+        android:src="@drawable/quizapplogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/question_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_panel_height"
+            android:layout_margin="@dimen/question_panel_margin"
+            android:alpha="0.8"
+            android:elevation="7dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/background_dark"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            tools:style="@style/CardView">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/question_panel_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/QuestionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:text="Question 1"
+                        android:textColor="@color/question_title_color"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/question"
+                        style="@style/QuestionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:text="@string/question1"
+                        android:textColor="@android:color/white"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.8"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            tools:style="@style/CardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/radioA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Mario" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/radioB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Tinytoons" />
+
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/radioC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Sonic" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/radioD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/custom_button_background"
+                        android:text="Teken" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/prev"
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Previous"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/next"
+                style="@style/QuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:text="Next"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="QuestionText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textStyle"></item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+</resources>
